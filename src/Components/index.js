@@ -1,0 +1,7 @@
+export {Header} from './Header'
+export {Home} from './Home'
+export {RequestAppointment} from './RequestAppointment'
+export {News} from './News'
+export {Tools} from './Tools'
+export {AboutUs} from './AboutUs'
+export {Help} from './Help'
