@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
 		gridGap: '40px',
 	},
 	logo: {
-		padding: '10px 40px',
+		padding: '10px 40px 20px 40px',
 	},
 	body: {
 		padding: '10px 40px',
@@ -54,6 +54,7 @@ const useStyles = createUseStyles({
 	},
 	menu: {
 		backgroundColor: '#b87333',
+		fontSize: '12px',
 		padding: '5px 100px',
 		display: 'flex',
 		justifyContent: 'space-between',

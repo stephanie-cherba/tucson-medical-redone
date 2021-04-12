@@ -10,10 +10,13 @@
       "single"
     ],
     "semicolon": [true, "never"],
-    "indent": [true, "tabs", 2],
+    "indent": [false, "tabs", 2],
     "object-literal-sort-keys": false,
     "object-literal-key-quotes": false,
-    "trailing-comma": false
+    "trailing-comma": false,
+    "no-trailing-whitespace": false,
+    "eofline": false,
+    "array-type": false
   },
   "rulesDirectory": []
 }

@@ -8,7 +8,7 @@ interface IProps {
 
 const useStyles = createUseStyles({
 	container: {
-		backgroundColor: '#909090',
+		backgroundColor: '#b87333',
 		boxShadow: '2px 0px 5px rgba(0, 0, 0, 0.5)',
 		display: 'flex',
 		flexDirection: 'column',
