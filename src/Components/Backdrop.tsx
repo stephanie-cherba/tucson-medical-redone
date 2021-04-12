@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
 		height: '170%',
 		left: 0,
 		background: 'rgba(0, 0, 0, 0.3)',
-		zIndex: '100',
+		zIndex: '0',
 	},
 })
 

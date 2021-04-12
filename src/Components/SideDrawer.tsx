@@ -18,14 +18,14 @@ const useStyles = createUseStyles({
 		position: 'fixed',
 		right: 0,
 		top: 0,
-		transform: 'translateX(100%)',
+		transform: 'translateX(0%)',
 		transition: 'transform 0.7s ease-out',
 		width: '30%',
-		zIndex: '200',
+		zIndex: '2',
 	},
 	link: {
 		color: 'white',
-		fontSsize: '23px',
+		fontSize: '23px',
 		textAlign: 'center',
 		textDecoration: 'none',
 		'&:hover &:active': {
@@ -49,32 +49,32 @@ export const SideDrawer = ({handleMenuIsOpenToggle}: IProps) => {
 	return (
 		<div className={classes.container}>
 			<ul className={classes.ul}>
-				<Link to='/' className={classes.link}>
+				<Link to='/' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Home
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/RequestAppointment' className={classes.link}>
+				<Link to='/RequestAppointment' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Appointments
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/News' className={classes.link}>
+				<Link to='/News' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					News
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/Tools' className={classes.link}>
+				<Link to='/Tools' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Tools
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/AboutUs' className={classes.link}>
+				<Link to='/AboutUs' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					About Us
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/Help' className={classes.link}>
+				<Link to='/Help' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Help/FAQ
 				</Link>
 			</ul>
