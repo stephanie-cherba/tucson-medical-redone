@@ -1,6 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
 import { Card } from './Card'
+import { TextAndLine } from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
@@ -90,6 +91,13 @@ export const Tools = () => {
 							keyword: 'Food and Nutrition Information Center',
 							description: 'Dietary Guidelines for Americans.'
 					}]}
+				/>
+				<TextAndLine
+					text={
+						<span>Your feedback and suggestions are always welcome Please email us at 
+							<span style={{fontWeight: 600}}> suggestions@TucsonMedical.com</span>
+						</span>
+					}
 				/>
 			</div>
 		</>

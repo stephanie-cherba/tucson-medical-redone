@@ -1,6 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
 import { Card } from './Card'
+import { TextAndLine } from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
@@ -15,6 +16,15 @@ const useStyles = createUseStyles({
 	body: {
 		textIndent: '2em',
 	},
+	addressContainer: {
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center'
+	},
+	subtitle: {
+		fontSize: '12px',
+		fontWeight: 600
+	}
 })
 
 export const Home = () => {
@@ -52,7 +62,7 @@ export const Home = () => {
 					work and attention to detail, and we are dedicated to preserving that
 					trust. We are ready when you are.
 				</p>
-				<p>Some Frequently Asked Questions and info about HCG.</p>
+				<p>Some <a href='/weightlossfaq'>Frequently Asked Questions</a> and info about HCG.</p>
 				<Card title='Latest Site News' content={[
 					{
 						keyword: 'Office News', 
@@ -75,6 +85,23 @@ export const Home = () => {
 						subtitle: 'Advanced Version of Menu Planner now online',
 						description: 'The next generation of the interactive menu planner is now online. Check it out and let us know what you think. You can find it here.'
 					}]}
+				/>
+				<div className={classes.addressContainer}>
+					<div className={classes.subtitle}>Golden West Weight Loss</div>
+					<div> 230 W. Ajo Way</div>
+					<div>Tucson, Arizona 85713</div>
+					<div>
+						<span>Phone: </span>
+						<span>(520) 792 - 1966</span>
+					</div>
+				</div>
+				<TextAndLine 
+					withoutBorder
+					text={
+						<span>Your feedback and suggestions are always welcome Please email us at 
+							<span style={{fontWeight: 600}}> suggestions@TucsonMedical.com</span>
+						</span>
+					}
 				/>
 			</div>
 		</>

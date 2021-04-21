@@ -1,6 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
 import { Card } from './Card'
+import { TextAndLine } from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
@@ -50,6 +51,14 @@ export const News = () => {
 						subtitle: 'Advanced Version of Menu Planner now online',
 						description: 'The next generation of the interactive menu planner is now online. Check it out and let us know what you think. You can find it here.'
 					}]}
+				/>
+				<TextAndLine
+					withoutBorder
+					text={
+						<span>Your feedback and suggestions are always welcome Please email us at 
+							<span style={{fontWeight: 600}}> suggestions@TucsonMedical.com</span>
+						</span>
+					}
 				/>
 			</div>
 		</>

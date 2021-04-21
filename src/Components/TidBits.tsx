@@ -1,5 +1,6 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
+import {TextAndLine} from './TextAndLine'
 
 const useStyles = createUseStyles({
 	border: {
@@ -16,21 +17,19 @@ const useStyles = createUseStyles({
 		fontSize: '12px',
 		paddingBottom: '10px',
 		textAlign: 'center',
-	},
-	tidbitsTitle: {
-		fontWeight: '900',
-	},
+	}
 })
 
 export const TidBits = () => {
 	const classes = useStyles()
 	return (
-		<div className={classes.container}>
-			<div className={classes.text}>
-				<span className={classes.tidbitsTitle}>Tid Bits: </span>
-				<span>Eating Celery uses more calories than the celery provides</span>
-			</div>
-			<div className={classes.border} />
-		</div>
+		<TextAndLine 
+			text={
+				<>
+					<span style={{fontWeight: 900}}>Tid Bits: </span>
+					<span>Eating Celery uses more calories than the celery provides</span>
+				</>
+			} 
+		/>
 	)
 }

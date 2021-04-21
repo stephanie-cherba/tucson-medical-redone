@@ -16,7 +16,8 @@
     "trailing-comma": false,
     "no-trailing-whitespace": false,
     "eofline": false,
-    "array-type": false
+    "array-type": false,
+    "import-sources-order": "any"
   },
   "rulesDirectory": []
 }

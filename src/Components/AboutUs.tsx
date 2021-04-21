@@ -1,14 +1,19 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
+import { TextAndLine } from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
 	container: {
-		padding: '0 150px',
+		padding: '40px 150px 0 150px',
 		fontSize: '12px',
 	},
 	title: {
 		fontSize: '18px',
+		fontWeight: '600',
+	},
+	subtitle: {
+		fontSize: '12px',
 		fontWeight: '600',
 	},
 	body: {
@@ -42,13 +47,41 @@ export const AboutUs = () => {
 				your trust and confidence. We earn your trust the old fashioned way, through hard work and attention to detail, 
 				and we are dedicated to preserving that trust. We are ready when you are.</p>
 				<p className={classes.body}>Golden West Weight Loss is located at 230 W. Ajo Way. We are between 6th and 12th 
-				Avenue, on the north side of Ajo Way, next to Hollinger Elementary School. Maps of our location are here.</p>
+				Avenue, on the north side of Ajo Way, next to Hollinger Elementary School. Maps of our location 
+				are <a href='/maps'>here</a>.</p>
 				<div className={classes.body}>Golden West Weight Loss office hours are:</div>
 				<div className={classes.schedule}>Monday through Friday - 7:00 AM to 6:00 PM (appointments 7:30 - 5:30)</div>
 				<div className={classes.schedule}>Saturday - 7:00 AM to 2:30 PM (appointments 7:30 - 2:00)</div>
 				<p className={classes.body}>For your convenience, Golden West Weight Loss accepts personal checks as well as 
 				MasterCard, Visa, Discover, and American Express cards.</p>
-			</div>		
+			</div>	
+			<div className={classes.container}>
+				<span> NEW FEATURE: </span>
+				<span>Appointments may be requested online <a href='/requestappointment'>here</a></span>
+			</div>
+			<div className={classes.container}>
+				<div className={classes.title}>Contact Us</div>
+				<div>If you have any questions about this site or Golden West Medical Center, P.C. (DBA Golden West Weight Loss), 
+					you can contact us via:</div>
+				<div className={classes.subtitle}>Email</div>
+				<div>info@TucsonMedical.com</div>
+				<div className={classes.subtitle}>Mail</div>
+				<div>Golden West Weight Loss</div>
+				<div>230 W Ajo Way</div>
+				<div>Tucson, Arizona 85713</div>
+				<div className={classes.subtitle}>Phone</div>
+				<div>(520) 792 - 1966)</div>
+				<div className={classes.subtitle}>Fax</div>
+				<div>(520) 628 - 8035)</div>
+			</div>
+			<TextAndLine
+					withoutBorder
+					text={
+						<span>Your feedback and suggestions are always welcome Please email us at 
+							<span style={{fontWeight: 600}}> suggestions@TucsonMedical.com</span>
+						</span>
+					}
+				/>	
 		</>
 	)
 }

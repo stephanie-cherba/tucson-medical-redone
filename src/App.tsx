@@ -4,10 +4,14 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
 import {AboutUs,
 	Backdrop,
+	FAQ,
+	Footer,
 	Header,
 	Help,
 	Home,
+	Maps,
 	News,
+	Policies,
 	RequestAppointment,
 	SideDrawer,
 	Tools,
@@ -32,6 +36,7 @@ export const App = () => {
 				</>
 			) : null}
 			<Home />
+			<Footer />
 		</>
 	)
 
@@ -45,6 +50,7 @@ export const App = () => {
 				</>
 			) : null}
 			<RequestAppointment />
+			<Footer />
 		</>
 	)
 
@@ -58,6 +64,7 @@ export const App = () => {
 				</>
 			) : null}
 			<News />
+			<Footer />
 		</>
 	)
 
@@ -71,6 +78,7 @@ export const App = () => {
 				</>
 			) : null}
 			<Tools />
+			<Footer />
 		</>
 	)
 
@@ -84,6 +92,7 @@ export const App = () => {
 				</>
 			) : null}
 			<AboutUs />
+			<Footer />
 		</>
 	)
 
@@ -97,6 +106,49 @@ export const App = () => {
 				</>
 			) : null}
 			<Help />
+			<Footer />
+		</>
+	)
+
+	const FAQComponent = () => (
+		<>
+			<Header handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+			{menuIsOpen ? (
+				<>
+					<SideDrawer handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+					<Backdrop handleBackdropClick={handleBackdropClick} />
+				</>
+			) : null}
+			<FAQ />
+			<Footer />
+		</>
+	)
+
+	const MapsComponent = () => (
+		<>
+			<Header handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+			{menuIsOpen ? (
+				<>
+					<SideDrawer handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+					<Backdrop handleBackdropClick={handleBackdropClick} />
+				</>
+			) : null}
+			<Maps />
+			<Footer />
+		</>
+	)
+
+	const PoliciesComponent = () => (
+		<>
+			<Header handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+			{menuIsOpen ? (
+				<>
+					<SideDrawer handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+					<Backdrop handleBackdropClick={handleBackdropClick} />
+				</>
+			) : null}
+			<Policies />
+			<Footer />
 		</>
 	)
 	return (
@@ -109,6 +161,9 @@ export const App = () => {
 					<Route path='/Tools' component={ToolsComponent} />
 					<Route path='/AboutUs' component={AboutComponent} />
 					<Route path='/Help' component={HelpComponent} />
+					<Route path='/WeightLossFAQ' component={FAQComponent} />
+					<Route path='/Maps' component={MapsComponent} />
+					<Route path='/Policies' component={PoliciesComponent} />
 				</Switch>
 			</Router>
 		</div>
