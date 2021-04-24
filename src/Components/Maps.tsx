@@ -16,6 +16,15 @@ const useStyles = createUseStyles({
 	body: {
 		textIndent: '2em',
 	},
+	img: {},
+	'@media (max-width: 800px)': {
+		container: {
+			padding: '0 50px',
+		},
+		img: {
+			width: '90%',
+		}
+	}
 })
 
 export const Maps = () => {
@@ -31,9 +40,9 @@ export const Maps = () => {
           map of our location with a driving directions link is <a href={googleLink} target='blank'>here</a> (will 
           open in a new window).</p>
         <p className={classes.body}>Below are two maps showing our office (the blue pointer).</p>
-        <img src={googleMap1} />
+        <img src={googleMap1} className={classes.img}/>
         <p className={classes.body}>A wider view:</p>
-        <img src={googleMap2} />
+        <img src={googleMap2} className={classes.img}/>
       </div>
 		</>	
 	)

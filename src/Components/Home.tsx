@@ -24,6 +24,11 @@ const useStyles = createUseStyles({
 	subtitle: {
 		fontSize: '12px',
 		fontWeight: 600
+	},
+	'@media (max-width: 700px)': {
+		container: {
+			padding: '0 50px',
+		},
 	}
 })
 
@@ -62,7 +67,7 @@ export const Home = () => {
 					work and attention to detail, and we are dedicated to preserving that
 					trust. We are ready when you are.
 				</p>
-				<p>Some <a href='/weightlossfaq'>Frequently Asked Questions</a> and info about HCG.</p>
+				<p>Some <a href='/weightlossfaq'>Frequently Asked Questions</a></p>
 				<Card title='Latest Site News' content={[
 					{
 						keyword: 'Office News', 
@@ -72,7 +77,6 @@ export const Home = () => {
 					{
 						keyword: 'Office News',
 						subtitle: 'Now offering Lipotropic Injections.',
-						// tslint:disable-next-line: quotemark
 						description: "We are now offering lipotropic injections to help our patients lose weight. Our 'Lipotropic Extreme' injections are compounded for us and are now available either individually or in combination with our other programs. Schedule an appointment today and see why lipotropic injections are already one of our most popular programs."
 					},
 					{

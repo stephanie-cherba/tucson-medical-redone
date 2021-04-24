@@ -24,6 +24,11 @@ const useStyles = createUseStyles({
 	body: {
 		textIndent: '2em',
 	},
+	'@media (max-width: 700px)': {
+		container: {
+			padding: '0 50px',
+		},
+	}
 })
 
 export const Policies = () => {

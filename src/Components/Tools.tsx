@@ -16,6 +16,11 @@ const useStyles = createUseStyles({
 	body: {
 		textIndent: '2em',
 	},
+	'@media (max-width: 1024px)': {
+		container: {
+			padding: '0 50px',
+		},
+	}
 })
 
 export const Tools = () => {
@@ -32,7 +37,6 @@ export const Tools = () => {
 				<Card title='Other Tools' content={[
 					{
 						keyword: 'Menu Planner',
-						// tslint:disable-next-line: quotemark
 						description: "This interactive menu planner is designed to guide daily food and meal choices based on one day's calorie allowance."
 					},
 					{

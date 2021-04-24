@@ -13,12 +13,20 @@ const useStyles = createUseStyles({
 		fontWeight: '600',
 	},
 	subTitle: {
- 		fontSize: '12px',
-		 fontWeight: '600'
+ 	  fontSize: '12px',
+		fontWeight: '600'
 	},
 	body: {
 		textIndent: '2em',
 	},
+  list: {
+    padding: '10px'
+  },
+  '@media (max-width: 700px)': {
+		container: {
+			padding: '0 50px',
+		},
+	}
 })
 
 export const FAQ = () => {
@@ -29,7 +37,7 @@ export const FAQ = () => {
 			<div className={classes.container}>
 				<div className={classes.title}>Weight Loss Program Frequently Asked Questions</div>
 				<div className={classes.subTitle}>Program Highlights:</div>
-				<ul className={classes.body}>
+				<ul className={classes.list}>
           <li>We have been doing this for over 30 years</li>
           <li>Many years combined experience from our health care providers</li>
           <li>We use effective medications that are tailored to your specific needs</li>

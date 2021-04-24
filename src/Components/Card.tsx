@@ -42,6 +42,11 @@ const useStyles = createUseStyles({
 	},
 	description: {
 		textIndent: '2em',
+	},
+	'@media (max-width: 600px)': {
+		container: {
+			display: 'none'
+		},
 	}
 })
 

@@ -7,7 +7,7 @@ interface IProps {
 
 const useStyles = createUseStyles({
 	container: {
-		marginTop: '-38%',
+		marginTop: '-60%',
 		position: 'fixed',
 		backgroundSize: 'cover',
 		width: '100%',

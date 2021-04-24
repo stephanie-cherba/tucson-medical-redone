@@ -20,6 +20,13 @@ const useStyles = createUseStyles({
 	tidbitsTitle: {
 		fontWeight: '900',
 	},
+	'@media (max-width: 1024px)': {
+		border: {
+			alignSelf: 'center',
+			borderBottom: '1px solid #b87333',
+			width: '80vw',
+		},
+	}
 })
 
 interface IProps {

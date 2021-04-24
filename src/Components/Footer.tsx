@@ -22,6 +22,17 @@ const useStyles = createUseStyles({
 	tidbitsTitle: {
 		fontWeight: '900',
 	},
+	'@media (max-width: 1024px)': {
+		border: {
+			width: '80vw',
+		},
+		container: {
+			margin: '35px 50px'
+		},
+		border: {
+			display: 'none'
+		}
+	}
 })
 
 export const Footer = () => {

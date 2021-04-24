@@ -106,6 +106,7 @@ const useStyles = createUseStyles({
 			padding: '10px',
 			display: 'grid',
 			gridTemplateColumns: '11fr 1fr',
+			gridGap: '0',
 		},
 		body: {
 			maxWidth: '100%',
@@ -122,6 +123,7 @@ const useStyles = createUseStyles({
 			backgroundColor: 'white',
 			height: '70px',
 			width: '30px',
+			marginRight: '20px'
 		},
 		hamburgerLine: {
 			width: '20px',

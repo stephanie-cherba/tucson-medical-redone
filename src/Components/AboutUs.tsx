@@ -5,6 +5,10 @@ import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
 	container: {
+		padding: '0 150px',
+		fontSize: '12px',
+	},
+	contactUsContainer: {
 		padding: '40px 150px 0 150px',
 		fontSize: '12px',
 	},
@@ -21,6 +25,14 @@ const useStyles = createUseStyles({
 	},
 	schedule: {
 		textIndent: '4em'
+	},
+	'@media (max-width: 700px)': {
+		container: {
+			padding: '0 50px',
+		},
+		contactUsContainer: {
+			padding: '30px 50px',
+		},
 	}
 })
 
@@ -59,7 +71,7 @@ export const AboutUs = () => {
 				<span> NEW FEATURE: </span>
 				<span>Appointments may be requested online <a href='/requestappointment'>here</a></span>
 			</div>
-			<div className={classes.container}>
+			<div className={classes.contactUsContainer}>
 				<div className={classes.title}>Contact Us</div>
 				<div>If you have any questions about this site or Golden West Medical Center, P.C. (DBA Golden West Weight Loss), 
 					you can contact us via:</div>

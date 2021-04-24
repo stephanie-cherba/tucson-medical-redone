@@ -20,7 +20,7 @@ const useStyles = createUseStyles({
 		top: 0,
 		transform: 'translateX(0%)',
 		transition: 'transform 0.7s ease-out',
-		width: '30%',
+		width: '60%',
 		zIndex: '2',
 	},
 	link: {
