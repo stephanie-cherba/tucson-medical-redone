@@ -24,25 +24,25 @@ const useStyles = createUseStyles({
     textAlign: 'center',
     fontSize: '16px',
     fontWeight: '600'
-  },
+	},
 	mainDescription: {
     textIndent: '2em',
-  },
+	},
   subContainer: {
     paddingTop: '20px'
-  },
+	},
 	keyword: {
     textDecoration: 'underline',
     fontWeight: '600',
     padding: '2px 5px'
-  },
+	},
 	subtitle: {
 		fontWeight: '600',
     padding: '2px 5px'
 	},
 	description: {
 		textIndent: '2em',
-	},
+	}
 })
 
 export const Card = ({title, mainDescription, content}: IProps) => {

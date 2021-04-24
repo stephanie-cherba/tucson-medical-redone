@@ -2,7 +2,7 @@ import React from 'react'
 import {createUseStyles} from 'react-jss'
 import googleMap1 from '../googleMap1.png'
 import googleMap2 from '../googleMap2.png'
-import { TidBits } from './TidBits'
+import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
 	container: {
@@ -20,8 +20,8 @@ const useStyles = createUseStyles({
 
 export const Maps = () => {
 	const classes = useStyles()
- const googleLink = 'https://www.google.com/maps/place/Golden+West+Medical+Center/@32.178107,-110.974717,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7b18d0293c4aa28f!8m2!3d32.178017!4d-110.9725284?hl=en'
- return (
+	const googleLink = 'https://www.google.com/maps/place/Golden+West+Medical+Center/@32.178107,-110.974717,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7b18d0293c4aa28f!8m2!3d32.178017!4d-110.9725284?hl=en'
+	return (
     <>
 		  <TidBits /> 
       <div className={classes.container}>

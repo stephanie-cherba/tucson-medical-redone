@@ -1,6 +1,6 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
-import { TextAndLine } from './TextAndLine'
+import {TextAndLine} from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({

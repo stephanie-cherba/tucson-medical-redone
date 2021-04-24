@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, {ReactNode} from 'react'
 import {createUseStyles} from 'react-jss'
 
 const useStyles = createUseStyles({

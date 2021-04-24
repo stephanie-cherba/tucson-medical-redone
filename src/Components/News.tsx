@@ -1,7 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
-import { Card } from './Card'
-import { TextAndLine } from './TextAndLine'
+import {Card} from './Card'
+import {TextAndLine} from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
@@ -38,7 +38,6 @@ export const News = () => {
 					{
 						keyword: 'Office News',
 						subtitle: 'Now offering Lipotropic Injections.',
-						// tslint:disable-next-line: quotemark
 						description: "We are now offering lipotropic injections to help our patients lose weight. Our 'Lipotropic Extreme' injections are compounded for us and are now available either individually or in combination with our other programs. Schedule an appointment today and see why lipotropic injections are already one of our most popular programs."
 					},
 					{

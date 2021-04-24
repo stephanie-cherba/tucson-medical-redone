@@ -1,7 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
-import { Card } from './Card'
-import { TextAndLine } from './TextAndLine'
+import {Card} from './Card'
+import {TextAndLine} from './TextAndLine'
 import {TidBits} from './TidBits'
 
 const useStyles = createUseStyles({
