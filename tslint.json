@@ -5,10 +5,7 @@
   ],
   "jsRules": {},
   "rules": {
-    "quotemark" : [
-      true,
-      "single"
-    ],
+    "quotemark" : false,
     "semicolon": [true, "never"],
     "indent": [false, "tabs", 2],
     "object-literal-sort-keys": false,
@@ -17,7 +14,12 @@
     "no-trailing-whitespace": false,
     "eofline": false,
     "array-type": false,
-    "import-sources-order": "any"
+    "import-sources-order": "any",
+    "max-line-length": false,
+    "align": true,
+    "ordered-imports": false,
+    "no-console": false,
+    "arrow-parens": false
   },
   "rulesDirectory": []
 }
