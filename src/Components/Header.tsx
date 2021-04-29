@@ -160,19 +160,19 @@ export const Header = ({handleMenuIsOpenToggle}: IProps) => {
 				<Link className={classes.link} to='/'>
 					Home
 				</Link>
-				<Link className={classes.link} to='RequestAppointment'>
+				<Link className={classes.link} to='request-appointment'>
 					Appointments
 				</Link>
-				<Link className={classes.link} to='/News'>
+				<Link className={classes.link} to='/news'>
 					News
 				</Link>
-				<Link className={classes.link} to='/Tools'>
+				<Link className={classes.link} to='/tools'>
 					Tools
 				</Link>
-				<Link className={classes.link} to='/AboutUs'>
+				<Link className={classes.link} to='/about-us'>
 					About Us
 				</Link>
-				<Link className={classes.link} to='/Help'>
+				<Link className={classes.link} to='/help'>
 					Help/FAQ
 				</Link>
 			</div>

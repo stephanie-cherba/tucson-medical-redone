@@ -67,7 +67,7 @@ export const Home = () => {
 					work and attention to detail, and we are dedicated to preserving that
 					trust. We are ready when you are.
 				</p>
-				<p>Some <a href='/weightlossfaq'>Frequently Asked Questions</a></p>
+				<p>Some <a href='/weight-loss-faq'>Frequently Asked Questions</a></p>
 				<Card title='Latest Site News' content={[
 					{
 						keyword: 'Office News', 

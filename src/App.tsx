@@ -156,14 +156,14 @@ export const App = () => {
 			<Router>
 				<Switch>
 					<Route exact path='/' component={HomeComponent} />
-					<Route path='/RequestAppointment' component={AppointmentComponent} />
-					<Route path='/News' component={NewsComponent} />
-					<Route path='/Tools' component={ToolsComponent} />
-					<Route path='/AboutUs' component={AboutComponent} />
-					<Route path='/Help' component={HelpComponent} />
-					<Route path='/WeightLossFAQ' component={FAQComponent} />
-					<Route path='/Maps' component={MapsComponent} />
-					<Route path='/Policies' component={PoliciesComponent} />
+					<Route path='/request-appointment' component={AppointmentComponent} />
+					<Route path='/news' component={NewsComponent} />
+					<Route path='/tools' component={ToolsComponent} />
+					<Route path='/about-us' component={AboutComponent} />
+					<Route path='/help' component={HelpComponent} />
+					<Route path='/weight-loss-faq' component={FAQComponent} />
+					<Route path='/maps' component={MapsComponent} />
+					<Route path='/policies' component={PoliciesComponent} />
 				</Switch>
 			</Router>
 		</div>

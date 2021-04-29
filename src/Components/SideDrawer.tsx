@@ -54,27 +54,27 @@ export const SideDrawer = ({handleMenuIsOpenToggle}: IProps) => {
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/RequestAppointment' className={classes.link} onClick={handleMenuIsOpenToggle}>
+				<Link to='/request-appointment' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Appointments
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/News' className={classes.link} onClick={handleMenuIsOpenToggle}>
+				<Link to='/news' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					News
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/Tools' className={classes.link} onClick={handleMenuIsOpenToggle}>
+				<Link to='/tools' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Tools
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/AboutUs' className={classes.link} onClick={handleMenuIsOpenToggle}>
+				<Link to='/about-us' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					About Us
 				</Link>
 			</ul>
 			<ul className={classes.ul}>
-				<Link to='/Help' className={classes.link} onClick={handleMenuIsOpenToggle}>
+				<Link to='/help' className={classes.link} onClick={handleMenuIsOpenToggle}>
 					Help/FAQ
 				</Link>
 			</ul>
