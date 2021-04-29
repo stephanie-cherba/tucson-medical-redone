@@ -25,13 +25,11 @@ const useStyles = createUseStyles({
 	'@media (max-width: 1024px)': {
 		border: {
 			width: '80vw',
+			display: 'none'
 		},
 		container: {
 			margin: '35px 50px'
 		},
-		border: {
-			display: 'none'
-		}
 	}
 })
 
