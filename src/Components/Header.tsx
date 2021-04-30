@@ -13,9 +13,16 @@ const useStyles = createUseStyles({
 		gridTemplateColumns: '1fr 8fr 1fr',
 		gridGap: '40px',
 	},
-	logo: {
+	logo1: {
 		padding: '10px 40px 20px 40px',
 	},
+	logo2: {
+		height: '35px',
+		width: '35px',
+		padding: '30px 0 20px 20px',
+		display: 'none'
+	},
+	bodyContainer: {},
 	body: {
 		padding: '10px 40px',
 	},
@@ -78,10 +85,13 @@ const useStyles = createUseStyles({
 		body: {
 			margin: 'auto',
 		},
-		logo: {
+		logo1: {
 			width: '100px',
 			height: '100px',
 			padding: '10px',
+		},
+		logo2: {
+			display: 'none'
 		},
 		menu: {
 			display: 'none',
@@ -108,11 +118,19 @@ const useStyles = createUseStyles({
 			gridTemplateColumns: '11fr 1fr',
 			gridGap: '0',
 		},
+		bodyContainer: {
+			display: 'grid',
+			gridTemplateColumns: '1fr 100fr',
+		},
 		body: {
 			maxWidth: '100%',
+			padding: '10px 20px'
 		},
-		logo: {
-			display: 'none',
+		logo1: {
+			display: 'none'
+		},
+		logo2: {
+			display: 'block'
 		},
 		menu: {
 			display: 'none',
@@ -140,14 +158,17 @@ export const Header = ({handleMenuIsOpenToggle}: IProps) => {
 	return (
 		<>
 			<div className={classes.container}>
-				<img src={logo} className={classes.logo} alt='logo' />
-				<div className={classes.body}>
-					<div className={classes.title}>Golden West Weight Loss</div>
-					<div className={classes.subtitle1}>Tucson, Arizona</div>
-					<div className={classes.subtitle2}>(520) 792-1966</div>
-					<div className={classes.border}></div>
-					<div className={classes.subtitle3}>
-						Changing the Shape of Tucson since 1984
+				<img src={logo} className={classes.logo1} alt='logo' />
+				<div className={classes.bodyContainer}>
+					<img src={logo} className={classes.logo2} alt='logo' />
+					<div className={classes.body}>
+						<div className={classes.title}>Golden West Weight Loss</div>
+						<div className={classes.subtitle1}>Tucson, Arizona</div>
+						<div className={classes.subtitle2}>(520) 792-1966</div>
+						<div className={classes.border}></div>
+						<div className={classes.subtitle3}>
+							Changing the Shape of Tucson since 1984
+						</div>
 					</div>
 				</div>
 				<button className={classes.hamburger} onClick={handleMenuIsOpenToggle}>

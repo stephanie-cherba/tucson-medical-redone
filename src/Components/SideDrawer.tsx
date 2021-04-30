@@ -12,35 +12,29 @@ const useStyles = createUseStyles({
 		boxShadow: '2px 0px 5px rgba(0, 0, 0, 0.5)',
 		display: 'flex',
 		flexDirection: 'column',
-		height: '100%',
-		justifyContent: 'center',
 		maxWidth: '340px',
 		position: 'fixed',
 		right: 0,
 		top: 0,
 		transform: 'translateX(0%)',
 		transition: 'transform 0.7s ease-out',
-		width: '60%',
+		width: '40%',
 		zIndex: '2',
+		padding: '10px 0'
 	},
 	link: {
 		color: 'white',
-		fontSize: '23px',
+		fontSize: '12px',
 		textAlign: 'center',
 		textDecoration: 'none',
-		'&:hover &:active': {
-			animation: 'shake 0.5s',
-			animationIterationCount: '.4',
-			fontSize: '26px',
-		},
 	},
 	ul: {
 		display: 'flex',
 		flexDirection: 'column',
-		height: '12%',
 		justifyContent: 'center',
 		listStyle: 'none',
-		marginLeft: '-10%',
+		padding: '10px 0',
+		margin: 0
 	},
 })
 

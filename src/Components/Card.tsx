@@ -14,7 +14,7 @@ interface IProps {
 
 const useStyles = createUseStyles({
 	container: {
-    margin: '50px 20px 50px 20px',
+    margin: '50px 20px',
 		padding: '20px 50px',
 		fontSize: '12px',
     backgroundColor: '#667289',
@@ -45,7 +45,8 @@ const useStyles = createUseStyles({
 	},
 	'@media (max-width: 600px)': {
 		container: {
-			display: 'none'
+			margin: '20px 0',
+			padding: '20px 30px',
 		},
 	}
 })

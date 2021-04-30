@@ -61,13 +61,25 @@ const useStyles = createUseStyles({
 	importantNote: {
 		color: 'red'
 	},
-	'@media (max-width: 1024px)': {
+	'@media (min-width: 570px) and (max-width: 1024px)': {
 		container: {
 			padding: '40px 50px 60px 50px',
 			fontSize: '12px',
 		},
 		form: {
 			width: '75%'
+		}
+	},
+	'@media (max-width: 570px)': {
+		container: {
+			padding: '40px 50px 60px 50px',
+			fontSize: '12px',
+		},
+		form: {
+			width: '75%'
+		},
+		patientTypeContainer: {
+			display: 'block',
 		}
 	}
 })
