@@ -196,6 +196,9 @@ export const Header = ({handleMenuIsOpenToggle}: IProps) => {
 				<Link className={classes.link} to='/help'>
 					Help/FAQ
 				</Link>
+				<Link className={classes.link} to='/about-this-project'>
+					About This Project
+				</Link>
 			</div>
 		</>
 	)

@@ -2,7 +2,9 @@ import React from 'react'
 import {useState} from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
-import {AboutUs,
+import {
+	AboutThisProject, 
+	AboutUs,
 	Backdrop,
 	FAQ,
 	Footer,
@@ -151,6 +153,20 @@ export const App = () => {
 			<Footer />
 		</>
 	)
+
+	const AboutThisProjectComponent = () => (
+		<>
+			<Header handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+			{menuIsOpen ? (
+				<>
+					<SideDrawer handleMenuIsOpenToggle={handleMenuIsOpenToggle} />
+					<Backdrop handleBackdropClick={handleBackdropClick} />
+				</>
+			) : null}
+			<AboutThisProject />
+			<Footer />
+		</>
+	)
 	return (
 		<div className='App'>
 			<Router>
@@ -164,6 +180,7 @@ export const App = () => {
 					<Route path='/weight-loss-faq' component={FAQComponent} />
 					<Route path='/maps' component={MapsComponent} />
 					<Route path='/policies' component={PoliciesComponent} />
+					<Route path='/about-this-project' component={AboutThisProjectComponent} />
 				</Switch>
 			</Router>
 		</div>

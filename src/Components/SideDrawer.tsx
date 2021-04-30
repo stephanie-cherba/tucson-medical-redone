@@ -72,6 +72,11 @@ export const SideDrawer = ({handleMenuIsOpenToggle}: IProps) => {
 					Help/FAQ
 				</Link>
 			</ul>
+			<ul className={classes.ul}>
+				<Link to='/about-this-project' className={classes.link} onClick={handleMenuIsOpenToggle}>
+					About This Project
+				</Link>
+			</ul>
 		</div>
 	)
 }
