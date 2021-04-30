@@ -69,7 +69,7 @@ export const AboutUs = () => {
 			</div>	
 			<div className={classes.container}>
 				<span> NEW FEATURE: </span>
-				<span>Appointments may be requested online <link href='/request-appointment'>here</link></span>
+				<span>Appointments may be requested online <a href='/request-appointment'>here</a></span>
 			</div>
 			<div className={classes.contactUsContainer}>
 				<div className={classes.title}>Contact Us</div>

@@ -34,7 +34,7 @@ export const Help = () => {
 			<div className={classes.container}>
 				<div className={classes.title}>Help and Frequently Asked Questions</div>
 				<p className={classes.body}>We have compiled a list of frequently asked questions 
-					(our weight loss program FAQ is <a href='weightlossfaq'> here</a>). If we have not 
+					(our weight loss program FAQ is <a href='weight-loss-faq'> here</a>). If we have not 
 					answered a question that you have, just ask us.</p>
 				<div className={classes.subTitle}>Do you prescribe medications over the internet or phone?</div>
 				<p className={classes.body}>No! We practice proper and responsible medicine. Our prescriptions 
